@@ -10,6 +10,12 @@ class App extends Component{
       data : ''
     }
   }
+  updateTest = ()=>{
+    this.setState(state=>(
+          {data : state.data + 'adding values '}
+            ),console.log(this.state.data))
+
+  }
   render (){
     return (
       <div className="App">
@@ -21,15 +27,12 @@ class App extends Component{
           </button>
           
           
-          <button onClick={()=>
-            this.setState(state=>(
-          {data : state.data + 'adding values'}
-            ))
-          }>
+          <button onClick={this.updateTest}>
             update Test
           </button>
           <h1>LIFE CYCLE METHOD</h1>
         </header>
+        
       </div>
     );
   }
