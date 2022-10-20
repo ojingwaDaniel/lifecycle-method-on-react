@@ -30,11 +30,11 @@ class App extends Component{
           <button onClick={this.updateTest}>
             update Test
           </button>
-          <h1>LIFE CYCLE METHOD</h1>
+          <h1>LIFE CYCLE METHOD (how do u see this</h1>
         </header>
         
       </div>
-    );
+    )
   }
   
 }
